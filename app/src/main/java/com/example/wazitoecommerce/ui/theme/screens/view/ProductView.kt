@@ -1,4 +1,4 @@
-package com.example.wazitoecommerce.ui.theme.screens.products
+package com.example.wazitoecommerce.ui.theme.screens.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -20,7 +20,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -32,7 +31,7 @@ import com.example.wazitoecommerce.models.Product
 import com.example.wazitoecommerce.ui.theme.WazitoECommerceTheme
 
 @Composable
-fun ViewProductsScreen(navController:NavHostController) {
+fun ViewProductsScreen(navController: NavHostController) {
     Column(modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally) {
 
@@ -78,8 +77,8 @@ fun ViewProductsScreen(navController:NavHostController) {
 
 @Composable
 fun ProductItem(name:String, quantity:String, price:String, id:String,
-                navController:NavHostController,
-                productRepository:ProductViewModel, productImage:String) {
+                navController: NavHostController,
+                productRepository: ProductViewModel, productImage:String) {
 
     Column(modifier = Modifier.fillMaxWidth()) {
         Text(text = name)

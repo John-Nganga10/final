@@ -17,6 +17,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.wazitoecommerce.navigation.ADD_PRODUCTS_URL
+import com.example.wazitoecommerce.navigation.CHAIRS_URL
+import com.example.wazitoecommerce.navigation.CONTROL_URL
 import com.example.wazitoecommerce.navigation.VIEW_PRODUCTS_URL
 import com.example.wazitoecommerce.ui.theme.WazitoECommerceTheme
 
@@ -27,7 +29,7 @@ fun HomeScreen(navController:NavHostController){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Wazito eCommerce",
+            text = "POST N Sell",
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive
@@ -43,6 +45,12 @@ fun HomeScreen(navController:NavHostController){
             navController.navigate(VIEW_PRODUCTS_URL)
         }) {
             Text(text = "View Products")
+        }
+        Spacer(modifier = Modifier.height(30.dp))
+        Button(onClick = {
+            navController.navigate(CONTROL_URL)
+        }) {
+            Text(text = "Buy products")
         }
     }
 }

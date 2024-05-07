@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.wazitoecommerce.data.AuthViewModel
+import com.example.wazitoecommerce.navigation.CHAIRS_URL
 import com.example.wazitoecommerce.navigation.SIGNUP_URL
 import com.example.wazitoecommerce.ui.theme.WazitoECommerceTheme
 
